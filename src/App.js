@@ -1,11 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
-import chocolate from './images/Chocolate.png'
-import dango from './images/Dango.png'
-import iceCream from './images/IceCream.png'
-import lollipop from './images/Lollipop.png'
-import purpleCandy from './images/PurpleCandy.png'
-import blank from './images/blank.png'
+import { chocolate, dango, iceCream, lollipop, purpleCandy, blank } from './images';
 
 const width = 8
 const candyColors = [
