@@ -154,6 +154,8 @@ const App = () => {
 
         const validMove = validMoves.includes(squareBeingReplacedId)
 
+        const isAColumnOfFive = checkForColumnOfFive()
+        const isARowOfFive = checkForRowOfFive()
         const isAColumnOfFour = checkForColumnOfFour()
         const isARowOfFour = checkForRowOfFour()
         const isAColumnOfThree = checkForColumnOfThree()
@@ -161,7 +163,7 @@ const App = () => {
 
         if (squareBeingReplacedId &&
             validMove &&
-            (isARowOfThree || isARowOfFour || isAColumnOfFour || isAColumnOfThree)) {
+            (isARowOfThree || isAColumnOfThree || isARowOfFour || isAColumnOfFour || isARowOfFive || isAColumnOfFive)) {
             setSquareBeingDragged(null)
             setSquareBeingReplaced(null)
         } else {
